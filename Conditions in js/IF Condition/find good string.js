@@ -6,7 +6,7 @@ const rl = readline.createInterface({
 });
 
 rl.question("Enter the string: ", function(str){
-    if (str[0] == "a" || str[0] == "A") {
+    if (str[0] == "a" || str[0] == "A" && length.str >= 3) {
         console.log("GOOD STRING");
     } else {
         console.log("NOT A GOOD STRING");
