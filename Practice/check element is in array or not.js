@@ -17,6 +17,6 @@ rl.question("Enter the elements (comma-separated): ", function(input1) {
             console.log("Number does not exist in num1");
         }
 
-        rl.close();
+        rl.close()
     });
 });
