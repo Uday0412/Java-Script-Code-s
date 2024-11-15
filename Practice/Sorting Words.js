@@ -3,7 +3,7 @@ function sortWords(sentence) {
     let cleanedSentence = "";
     for (let i = 0; i < sentence.length; i++) {
         const char = sentence[i].toLowerCase();
-        if ((char >= 'a' && char <= 'z') || char === ' ') {
+        if (char >= 'a' && char <= 'z' || char === ' '){
             cleanedSentence += char;
         }
     }
@@ -36,7 +36,17 @@ function sortWords(sentence) {
     return words;
 }
 
-// Example usage
-let sentence = "Sorting words in a sentence, alphabetically is fun!";
-let sortedWords = sortWords(sentence);
-console.log(sortedWords.join(" ")); // Output: "a alphabetically fun in is sentence sorting words"
+const readline = require("readline");
+
+const rl = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout
+});
+
+rl.question("Enter the string: ",function(input1){
+
+    const result = sortWords(input1);
+    console.log(result);
+
+    rl.close();
+});
