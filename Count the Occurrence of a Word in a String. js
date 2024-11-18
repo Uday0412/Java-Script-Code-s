@@ -1,0 +1,5 @@
+function countOccurrences(sentence, word) {
+    const words = sentence.toLowerCase().split(' ');
+    return words.filter(w => w === word.toLowerCase()).length;
+}
+console.log(countOccurrences("This is Apna Market. Visit Apna Market.", "Apna")); // Output: 2
