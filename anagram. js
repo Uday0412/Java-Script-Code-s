@@ -1,0 +1,14 @@
+function areAnagrams(str1, str2) {
+    // Helper function to clean and sort a string
+    function cleanString(str) {
+        return str.toLowerCase().replace(/[^a-z0-9]/g, '').split('').sort().join('');
+    }
+
+    // Compare the cleaned and sorted versions of both strings
+    return cleanString(str1) === cleanString(str2);
+}
+
+// Test cases
+console.log(areAnagrams("listen", "silent")); // Output: true
+console.log(areAnagrams("hello", "world"));   // Output: false
+console.log(areAnagrams("Dormitory", "Dirty room")); // Output: true
