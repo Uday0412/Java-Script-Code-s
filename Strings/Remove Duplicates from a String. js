@@ -1,0 +1,6 @@
+def remove_duplicates(s):
+    return "".join(dict.fromkeys(s))
+
+# Example usage:
+string = "programming"
+print("Without Duplicates:", remove_duplicates(string))
