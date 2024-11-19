@@ -1,0 +1,6 @@
+def replace_substring(s, old, new):
+    return s.replace(old, new)
+
+# Example usage:
+string = "I love programming"
+print("Updated String:", replace_substring(string, "programming", "Python"))
