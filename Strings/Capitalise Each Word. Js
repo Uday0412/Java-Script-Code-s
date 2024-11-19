@@ -1,0 +1,6 @@
+def capitalise_words(s):
+    return s.title()
+
+# Example usage:
+string = "welcome to apna market"
+print("Capitalised String:", capitalise_words(string))
