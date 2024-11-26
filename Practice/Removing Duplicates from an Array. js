@@ -1,0 +1,13 @@
+function removeDuplicates(arr) {
+  const uniqueArr = [];
+  for (let i = 0; i < arr.length; i++) {
+    if (!uniqueArr.includes(arr[i])) {
+      uniqueArr.push(arr[i]);
+    }
+  }
+  return uniqueArr;
+}
+
+const numbersWithDuplicates = [1, 2, 3, 1, 2, 4, 5, 4];
+const uniqueNumbers = removeDuplicates(numbersWithDuplicates);
+console.log("Unique numbers:", uniqueNumbers);
