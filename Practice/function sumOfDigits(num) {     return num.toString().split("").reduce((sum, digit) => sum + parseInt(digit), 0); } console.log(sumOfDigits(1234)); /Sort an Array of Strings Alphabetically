@@ -1,0 +1,4 @@
+let words = ["apple", "banana", "cherry", "date"];
+let sortedWords = words.sort();
+console.log(sortedWords);
+// Output: ["apple", "banana", "cherry", "date"]
